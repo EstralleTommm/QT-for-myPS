@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1143</width>
+    <height>908</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ps by 唐铃沐 17905827</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ico.qrc">
+    <normaloff>:/new/Image/icon/myico.ico</normaloff>:/new/Image/icon/myico.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1143</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="new_2"/>
+    <addaction name="open"/>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="save"/>
+    <addaction name="saveAs"/>
+    <addaction name="separator"/>
+    <addaction name="close"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="action_7"/>
+    <addaction name="action_8"/>
+    <addaction name="action_9"/>
+    <addaction name="action_10"/>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+    <addaction name="action_13"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>几何变换</string>
+    </property>
+    <widget class="QMenu" name="menu_9">
+     <property name="title">
+      <string>图像缩放</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ico.qrc">
+       <normaloff>:/new/Image/geom/Geom_EnlargeReduce.png</normaloff>:/new/Image/geom/Geom_EnlargeReduce.png</iconset>
+     </property>
+     <addaction name="action_20"/>
+     <addaction name="action_21"/>
+    </widget>
+    <widget class="QMenu" name="menu_10">
+     <property name="title">
+      <string>图像旋转</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ico.qrc">
+       <normaloff>:/new/Image/geom/Geom_Rotate.png</normaloff>:/new/Image/geom/Geom_Rotate.png</iconset>
+     </property>
+     <addaction name="action_22"/>
+     <addaction name="action_23"/>
+     <addaction name="action_24"/>
+    </widget>
+    <widget class="QMenu" name="menu_11">
+     <property name="title">
+      <string>图像翻转</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ico.qrc">
+       <normaloff>:/new/Image/geom/Geom_Flip.png</normaloff>:/new/Image/geom/Geom_Flip.png</iconset>
+     </property>
+     <addaction name="action_25"/>
+     <addaction name="action_26"/>
+    </widget>
+    <addaction name="menu_9"/>
+    <addaction name="menu_10"/>
+    <addaction name="menu_11"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>灰度变换</string>
+    </property>
+    <widget class="QMenu" name="menu_12">
+     <property name="title">
+      <string>非线性变换</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ico.qrc">
+       <normaloff>:/new/Image/gray/Gray_Nolinear.png</normaloff>:/new/Image/gray/Gray_Nolinear.png</iconset>
+     </property>
+     <addaction name="action_32"/>
+     <addaction name="action_33"/>
+     <addaction name="action_34"/>
+    </widget>
+    <addaction name="action_27"/>
+    <addaction name="action_28"/>
+    <addaction name="action_29"/>
+    <addaction name="action_30"/>
+    <addaction name="menu_12"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>颜色模型</string>
+    </property>
+    <widget class="QMenu" name="menuRGB">
+     <property name="title">
+      <string>RGB模型</string>
+     </property>
+     <addaction name="actionR"/>
+     <addaction name="actionG"/>
+     <addaction name="actionB"/>
+    </widget>
+    <addaction name="menuRGB"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_49"/>
+    <addaction name="action_50"/>
+   </widget>
+   <widget class="QMenu" name="menu_13">
+    <property name="title">
+     <string>图像增强</string>
+    </property>
+    <widget class="QMenu" name="menu_14">
+     <property name="title">
+      <string>平滑</string>
+     </property>
+     <addaction name="action_39"/>
+     <addaction name="action_40"/>
+     <addaction name="action_41"/>
+    </widget>
+    <widget class="QMenu" name="menu_15">
+     <property name="title">
+      <string>锐化</string>
+     </property>
+     <addaction name="actionSobel"/>
+     <addaction name="actionLaplacian"/>
+     <addaction name="actionCanny"/>
+    </widget>
+    <addaction name="menu_14"/>
+    <addaction name="menu_15"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_13"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_8"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="new_2"/>
+   <addaction name="open"/>
+   <addaction name="save"/>
+   <addaction name="saveAs"/>
+   <addaction name="action_3"/>
+   <addaction name="action_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="new_2">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/file/New.png</normaloff>:/new/Image/file/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="iconText">
+    <string>新建</string>
+   </property>
+   <property name="toolTip">
+    <string>新建</string>
+   </property>
+   <property name="statusTip">
+    <string>新建图像</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/file/Open.png</normaloff>:/new/Image/file/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+   <property name="statusTip">
+    <string>打开图像</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/file/Save.png</normaloff>:/new/Image/file/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="statusTip">
+    <string>保存图像</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAs">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/file/SaveAs.png</normaloff>:/new/Image/file/SaveAs.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+   <property name="statusTip">
+    <string>图像另存为</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </action>
+  <action name="close">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/file/Close.png</normaloff>:/new/Image/file/Close.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="statusTip">
+    <string>关闭软件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F4</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/edit/Edit_Cancel.png</normaloff>:/new/Image/edit/Edit_Cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/edit/Edit_Resume.png</normaloff>:/new/Image/edit/Edit_Resume.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/edit/Edit_Full.png</normaloff>:/new/Image/edit/Edit_Full.png</iconset>
+   </property>
+   <property name="text">
+    <string>全屏显示</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/edit/Edit_Max.png</normaloff>:/new/Image/edit/Edit_Max.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出全屏</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>工具箱</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>几何变换</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度变换</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>颜色模型</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>输出窗口</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>属性窗口</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_Enlarge.png</normaloff>:/new/Image/geom/Geom_Enlarge.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大一倍</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_Reduce.png</normaloff>:/new/Image/geom/Geom_Reduce.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小一倍</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_RotateRight.png</normaloff>:/new/Image/geom/Geom_RotateRight.png</iconset>
+   </property>
+   <property name="text">
+    <string>顺时针旋转</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_RotateLeft.png</normaloff>:/new/Image/geom/Geom_RotateLeft.png</iconset>
+   </property>
+   <property name="text">
+    <string>逆时针旋转</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_RotateCenter.png</normaloff>:/new/Image/geom/Geom_RotateCenter.png</iconset>
+   </property>
+   <property name="text">
+    <string>中心旋转</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_FlipX.png</normaloff>:/new/Image/geom/Geom_FlipX.png</iconset>
+   </property>
+   <property name="text">
+    <string>水平翻转</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/geom/Geom_FlipY.png</normaloff>:/new/Image/geom/Geom_FlipY.png</iconset>
+   </property>
+   <property name="text">
+    <string>垂直翻转</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Bin.png</normaloff>:/new/Image/gray/Gray_Bin.png</iconset>
+   </property>
+   <property name="text">
+    <string>二值图</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Gray.png</normaloff>:/new/Image/gray/Gray_Gray.png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度图</string>
+   </property>
+  </action>
+  <action name="action_29">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Reverse.png</normaloff>:/new/Image/gray/Gray_Reverse.png</iconset>
+   </property>
+   <property name="text">
+    <string>反转变换</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Linear.png</normaloff>:/new/Image/gray/Gray_Linear.png</iconset>
+   </property>
+   <property name="text">
+    <string>线性变换</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Log.png</normaloff>:/new/Image/gray/Gray_Log.png</iconset>
+   </property>
+   <property name="text">
+    <string>指数变换</string>
+   </property>
+   <property name="toolTip">
+    <string>指数变换</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Gamma.png</normaloff>:/new/Image/gray/Gray_Gamma.png</iconset>
+   </property>
+   <property name="text">
+    <string>伽马变换</string>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/gray/Gray_Histeq.png</normaloff>:/new/Image/gray/Gray_Histeq.png</iconset>
+   </property>
+   <property name="text">
+    <string>直方图均衡化</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>腐蚀</string>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>膨胀</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>均值滤波</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>高斯滤波</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>中值滤波</string>
+   </property>
+  </action>
+  <action name="actionSobel">
+   <property name="text">
+    <string>Sobel算子</string>
+   </property>
+  </action>
+  <action name="actionLaplacian">
+   <property name="text">
+    <string>Laplacian算子</string>
+   </property>
+  </action>
+  <action name="actionCanny">
+   <property name="text">
+    <string>Canny算子</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>圆检测</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>直线检测</string>
+   </property>
+  </action>
+  <action name="action_44">
+   <property name="text">
+    <string>开运算</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>闭运算</string>
+   </property>
+  </action>
+  <action name="action_46">
+   <property name="text">
+    <string>顶帽操作</string>
+   </property>
+  </action>
+  <action name="action_47">
+   <property name="text">
+    <string>黑帽操作</string>
+   </property>
+  </action>
+  <action name="action_48">
+   <property name="text">
+    <string>形态学梯度</string>
+   </property>
+  </action>
+  <action name="actionR">
+   <property name="text">
+    <string>R分量图</string>
+   </property>
+  </action>
+  <action name="actionG">
+   <property name="text">
+    <string>G分量图</string>
+   </property>
+  </action>
+  <action name="actionB">
+   <property name="text">
+    <string>B分量图</string>
+   </property>
+  </action>
+  <action name="actionH">
+   <property name="text">
+    <string>H分量图</string>
+   </property>
+  </action>
+  <action name="actionS">
+   <property name="text">
+    <string>S分量图</string>
+   </property>
+  </action>
+  <action name="actionV">
+   <property name="text">
+    <string>V分量图</string>
+   </property>
+  </action>
+  <action name="actionY">
+   <property name="text">
+    <string>Y分量图</string>
+   </property>
+  </action>
+  <action name="actionU">
+   <property name="text">
+    <string>U分量图</string>
+   </property>
+  </action>
+  <action name="actionV_2">
+   <property name="text">
+    <string>V分量图</string>
+   </property>
+  </action>
+  <action name="actionH_2">
+   <property name="text">
+    <string>H分量图</string>
+   </property>
+  </action>
+  <action name="actionL">
+   <property name="text">
+    <string>L分量图</string>
+   </property>
+  </action>
+  <action name="actionS_2">
+   <property name="text">
+    <string>S分量图</string>
+   </property>
+  </action>
+  <action name="action_49">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/help/Help_Info.png</normaloff>:/new/Image/help/Help_Info.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_50">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/edit/Edit_Option.png</normaloff>:/new/Image/edit/Edit_Option.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/new/Image/view/Check.png</normaloff>:/new/Image/view/Check.png</iconset>
+   </property>
+   <property name="text">
+    <string>图像增强</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>打开视频</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>保存视频</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ico.qrc"/>
+ </resources>
+ <connections/>
+</ui>
